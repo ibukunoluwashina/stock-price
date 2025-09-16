@@ -73,7 +73,7 @@ function StockRow({ ticker, onRemove }) {
 
         // If no mock data, try real API (but warn about rate limits)
         const apiKey = "QEK9W75WZ06DQP0E";
-        console.log(`⚠️ Using real API for ${ticker} (25 requests/day limit)`);
+        console.log(` Using real API for ${ticker} (25 requests/day limit)`);
 
         const response = await fetch(
           `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${ticker}&apikey=${apiKey}`
